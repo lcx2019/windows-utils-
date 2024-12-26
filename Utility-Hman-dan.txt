@@ -1,0 +1,10 @@
+Launching the Utility
+To get started with the Chris Titus Tech Windows Utility, you’ll need to run a simple command in PowerShell. Here’s how:
+
+Step 1: Right-click on your Start button and select Terminal or PowerShell as an administrator.
+Screenshot showing how to open PowerShell as administrator from the Start menu.
+Step 2: Copy the command below, then paste it into the Terminal or PowerShell window:
+
+irm https://christitus.com/win | iex
+
+Step 3: Hit Enter, and the utility will start without actually installing on your computer. This command fetches the utility directly from the internet and runs it via PowerShell.
