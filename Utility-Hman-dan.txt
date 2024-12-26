@@ -8,3 +8,7 @@ Step 2: Copy the command below, then paste it into the Terminal or PowerShell wi
 irm https://christitus.com/win | iex
 
 Step 3: Hit Enter, and the utility will start without actually installing on your computer. This command fetches the utility directly from the internet and runs it via PowerShell.
+
+
+a nih loh chuan ka download sa hi hman tur
+winutil.ps1
