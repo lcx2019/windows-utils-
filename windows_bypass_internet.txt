@@ -7,3 +7,46 @@ chuan
 OOBE\BYPASSNRO
 command ah chhutluh tur
 
+#bypass CPU not Support
+
+********* Windows 11 Cpu Not cupport Bypass .reg
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup]
+"AllowUpgradesWithUnsupportedTPMOrCPU"=dword:00000001
+"CorrelationVector"="oCPrgYnkCEme68CL.6"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup\Tracking]
+"InstallAttempts"=dword:00000002
+"FailureCount"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup\Volatile]
+"InstallScenario"=dword:00000001
+"InstallMode"=dword:00000001
+"BoxHash"="B8E25690E16DD73EFB656183EEFF0AFCDCD655F3"
+"InstallTicks"=dword:0000001e
+"SetupProgress"=dword:00000009
+"SetupPhase"=dword:00000004
+"SetupSubPhase"=dword:00000006
+"MitigationHash"="7CFE4DFE62197AA96C47567951DCD90D1D0D5FD8"
+
+
+
+************
+
+
+
+What to Do If Windows 11 Doesn’t Support My CPU
+If your processor is not supported for Windows 11 and you want to upgrade to Windows 11, you can refer to the ways in this post: How to Install Windows 11 on Unsupported PC/Hardware? (4 Ways).
+
+Note that if you use these ways to install Windows 11 on your computer, you may encounter the processor not supported issue when updating Windows 11.
+
+If your CPU had ever been on Microsoft’s list of supported CPUs but Microsoft removed it, you can use the following way to work around the processor not supported issue. Here is the guide:
+
+Download the Windows 11 Media Creation Tool from Microsoft and then run this tool to download the Windows 11 ISO file.
+After that, open Registry Editor and go to HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup.
+At the right pane, right-click on the blank area and choose New > DWORD (32-bit) Value.
+Name the new value AllowUpgradesWithUnsupportedTPMOrCPU.
+Double-click on the newly created value and type 1 at Value Data.
+Restart the PC and then double-click the Windows 11 ISO file. The file should be opened in File Explorer.
+Double-click the setup.exe file and follow the on-screen instructions to perform an in-place upgrade.
