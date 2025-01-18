@@ -1,0 +1,28 @@
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+
+
+
+
+
+
+x----------------------------
+
+Windows 11 Long File Path Names
+Windows 11 supports long file paths, but enabling this feature requires some configuration steps. Here’s how you can enable long file path names in Windows 11:
+
+Registry Editor:
+Press Win + R, type regedit, and hit Enter to open the Registry Editor.
+Navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem.
+Find the LongPathsEnabled entry, double-click it, and set its value to 1.
+Command Line (PowerShell):
+Open PowerShell as an administrator.
+Run the command:
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+
+Group Policy Editor:
+For Windows 11 Pro or Enterprise, you can use the Group Policy Editor.
+Navigate to Computer Configuration > Administrative Templates > System > Filesystem.
+Enable the Enable Win32 long paths policy.
+Third-Party Tools:
+If you are using Windows 11 Home and need the Group Policy Editor, you can use third-party tools like Local Group Policy Editor Plus (available on GitHub).
+After enabling these settings, restart your computer to apply the changes. Note that while the file system supports long paths, some applications, including Windows Explorer, may still not fully support long file paths due to legacy API usage.
